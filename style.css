@@ -25,7 +25,7 @@
 
 .principal {
     width: 100%;
-    height: 940px;
+    height: 1920px;
     position: absolute;
     background: linear-gradient(rgb(160, 175, 176),#000000);
     
@@ -68,4 +68,55 @@
 .cuadritos:hover {
     transform: scale(1.1);
     opacity: 100%;
+}
+
+@media screen and (max-width:720px) {
+
+    .barra {
+        width: 720px;
+        height: 70px;
+    }
+    
+    .texto {
+        position: absolute;
+        display: block;
+        top: 10%;
+        text-align: center;
+        font-size: 14px;
+    }
+    
+    .logo {
+        position: absolute;
+        display: block;
+        top: 20%;
+        text-align: center;
+    }
+
+    .principal {
+        width: 720px;
+        height: 1600px;
+        position: absolute;
+        background: linear-gradient(rgb(160, 175, 176),#000000);
+    }
+    
+    .enlaces {
+        position: absolute;
+        display: block;
+        margin: 5%;
+    }
+    
+    .tituloCuadritos{
+        font-size: 20px;
+    }
+        
+    .cuadritos {
+        width: 80%;
+        border-radius: 10px;
+        transition: none;
+        opacity: 100%;
+        margin-top: 5%;
+        margin-left: 10%;
+    
+    }
+        
 }
