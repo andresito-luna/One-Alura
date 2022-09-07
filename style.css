@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
 .barra {
     position: sticky;
     width: 100%;
@@ -72,9 +79,16 @@
 
 @media screen and (max-width:720px) {
 
+    .body {
+        width: 100vw;
+        min-height: 100vh;
+    }
+
     .barra {
-        width: 720px;
+        width: 100vw;
         height: 70px;
+        position: relative;
+        display: block;
     }
     
     .texto {
@@ -93,16 +107,18 @@
     }
 
     .principal {
-        width: 720px;
-        height: 1600px;
-        position: absolute;
+        width: 100vw;
+        height: calc(100vh - 70px);
+        position: relative;
+        display: block;
         background: linear-gradient(rgb(160, 175, 176),#000000);
     }
     
     .enlaces {
         position: absolute;
         display: block;
-        margin: 5%;
+        margin: unset;
+        
     }
     
     .tituloCuadritos{
@@ -110,13 +126,11 @@
     }
         
     .cuadritos {
-        width: 80%;
+        width: 80vw;
         border-radius: 10px;
         transition: none;
         opacity: 100%;
-        margin-top: 5%;
-        margin-left: 10%;
-    
+        margin: 20px 10vw 0 10vw;
     }
         
 }
