@@ -1,0 +1,122 @@
+.barra {
+    position: sticky;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(160, 175, 176);
+}
+
+.texto {
+    position: relative;
+    display: inline;
+    top: 20px;
+    left: 20%;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Inter';
+
+}
+
+.logo {
+    position: relative;
+    display: inline;
+    top: 30px;
+    left: 30%;
+}
+
+.principal {
+    width: 100%;
+    height: 1920px;
+    position: absolute;
+    background: linear-gradient(rgb(160, 175, 176),#000000);
+    
+}
+
+.enlaces {
+    position: absolute;
+    display: inline;
+    margin: 50px;
+
+}
+
+.tituloCuadritos{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Inter';
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+    transition: 0.7s all;
+}
+
+.tituloCuadritos:hover{
+    font-size: 24px;
+    font-weight: bolder;
+    color: chocolate;
+    text-decoration: underline;
+
+}
+
+.cuadritos {
+    width: 350px;
+    border-radius: 10px;
+    transition: 0.7s all;
+    opacity: 70%;
+    margin-top: 15px;
+
+}
+
+.cuadritos:hover {
+    transform: scale(1.1);
+    opacity: 100%;
+}
+
+@media screen and (max-width:720px) {
+
+    .barra {
+        width: 720px;
+        height: 70px;
+    }
+    
+    .texto {
+        position: absolute;
+        display: block;
+        top: 10%;
+        text-align: center;
+        font-size: 14px;
+    }
+    
+    .logo {
+        position: absolute;
+        display: block;
+        top: 20%;
+        text-align: center;
+    }
+
+    .principal {
+        width: 720px;
+        height: 1600px;
+        position: absolute;
+        background: linear-gradient(rgb(160, 175, 176),#000000);
+    }
+    
+    .enlaces {
+        position: absolute;
+        display: block;
+        margin: 5%;
+    }
+    
+    .tituloCuadritos{
+        font-size: 20px;
+    }
+        
+    .cuadritos {
+        width: 80%;
+        border-radius: 10px;
+        transition: none;
+        opacity: 100%;
+        margin-top: 5%;
+        margin-left: 10%;
+    
+    }
+        
+}
