@@ -100,7 +100,7 @@ main{
 
 .resultado {
     position: absolute;
-    width: 300px;
+    width: 350px;
     height: 650px;
     left: 1000px;
     top: 40px;
@@ -146,8 +146,17 @@ main{
     flex-grow: 0;
 }
 
+
+.final {
+    list-style-type: none;
+    margin: 0%;
+    padding: 10%;
+    display:none
+}
+
 .mensaje {
-    width: 80%;
+    width: 10em;
+    height: 17.5em;
     margin: 10%;
     font-family: 'Inter';
     font-style: normal;
@@ -168,10 +177,7 @@ main{
     background: #D8DFE8;
     border: 1px solid #0A3871;
     border-radius: 24px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-  
+      
     font-family: 'Inter';
     font-style: bolder;
     font-weight: 400;
@@ -179,36 +185,16 @@ main{
     line-height: 19px;
     text-align: center;
     color: #0A3871;
-    flex: none;
-    order: 0;
-    flex-grow: 1;
 }
 
-.final {
-    list-style-type: none;
-    margin: 0%;
-    padding: 10%;
-    display:none
-}
 
 .desarrollado {
+    display: block;
     text-align: center;
     font-family: 'Inter';
     font-style: bolder;
+    font-size: 16px; 
 }
-
-
-
-/* RESPONSIVIDAD */
-
-
-
-
-
-
-
-
-
 
 @media screen and (max-width:720px) {
 
@@ -238,25 +224,22 @@ main{
     }
 
     .botones {
-        position: absolute;
+        position: relative;
         display: block;
+        height: 200px;
     }
 
     .encriptar {
-        position: unset;
+        position: absolute;
         display: block;
         width: 650px;
     }
 
     .desencriptar {
-        position: unset;
+        position: absolute;
         display: block;
         width: 650px;
-        margin-top: 20px;
-    }
-
-    .grafica {
-        display: none;
+        margin-top: 80px;
     }
 
     .resultado {
@@ -264,8 +247,55 @@ main{
         top: unset;
         position: relative;
         display: block;
-        width: 650px;
+        width: 90vw;
+        height: 50vw;
+        margin: 0px 5vw 0 5vw;
+        padding: 0%;
+    }
+
+    .inicial {
+        position: absolute;
+        width: 90vw;
+        padding: 0%;
+        height: 300px;
+        margin-top: 0px;
+    }
+
+    .grafica {
+        display: none;
+    }
+
+    .tituloResultado {
+        font-size: 44px;
+    }
+
+    .textoResultado {
+        font-size: 38px;
+    }
+
+    .final {
+        position: absolute;
+        width: 90vw;
+        padding: 0%;
         height: auto;
-        margin: 35px; 
+        margin-top: 0px;
+    }
+
+    .mensaje {
+        
+        width: 24em;
+        height: 13em;
+        margin: 1em;
+        font-size: 25px;
+    }
+
+    .copiar {
+        position: absolute;
+        width: 650px;
+    }
+
+    .desarrollado {
+        margin-top: 150px;
+        font-size: 26px;
     }
 }
