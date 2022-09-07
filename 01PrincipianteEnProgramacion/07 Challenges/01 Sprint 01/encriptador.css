@@ -195,5 +195,77 @@ main{
     text-align: center;
     font-family: 'Inter';
     font-style: bolder;
-    
+}
+
+
+
+/* RESPONSIVIDAD */
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:720px) {
+
+    main{
+        position: unset;
+        width: unset;
+        height: unset;
+        display: unset;
+        margin-left: unset;
+        margin-bottom: unset;
+    }
+
+    .entrada {
+        position: unset;
+        display: block;
+        width: 650px;
+        height: auto;
+        margin: 5%;
+    }
+
+    .input-texto {
+        position: relative;
+        display: block;
+        padding: 0%;
+        width: 650px;
+        height: 500px;
+    }
+
+    .botones {
+        position: absolute;
+        display: block;
+    }
+
+    .encriptar {
+        position: unset;
+        display: block;
+        width: 650px;
+    }
+
+    .desencriptar {
+        position: unset;
+        display: block;
+        width: 650px;
+        margin-top: 20px;
+    }
+
+    .grafica {
+        display: none;
+    }
+
+    .resultado {
+        left: unset;
+        top: unset;
+        position: relative;
+        display: block;
+        width: 650px;
+        height: auto;
+        margin: 35px; 
+    }
 }
