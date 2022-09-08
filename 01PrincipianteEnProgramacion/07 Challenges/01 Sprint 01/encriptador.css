@@ -198,6 +198,20 @@ main{
 
 @media screen and (max-width:720px) {
 
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        box-sizing: border-box;
+    }
+
+    .body {
+        width: 100vw;
+        min-height: 100vh;
+    }
+
+
+
     main{
         position: unset;
         width: unset;
@@ -210,7 +224,7 @@ main{
     .entrada {
         position: unset;
         display: block;
-        width: 650px;
+        width: 100vw;
         height: auto;
         margin: 5%;
     }
@@ -219,7 +233,7 @@ main{
         position: relative;
         display: block;
         padding: 0%;
-        width: 650px;
+        width: 100vw;
         height: 500px;
     }
 
@@ -232,13 +246,13 @@ main{
     .encriptar {
         position: absolute;
         display: block;
-        width: 650px;
+        width: 90vw;
     }
 
     .desencriptar {
         position: absolute;
         display: block;
-        width: 650px;
+        width: 90vw;
         margin-top: 80px;
     }
 
@@ -257,7 +271,7 @@ main{
         position: absolute;
         width: 90vw;
         padding: 0%;
-        height: 300px;
+        height: 90vw;
         margin-top: 0px;
     }
 
@@ -266,32 +280,38 @@ main{
     }
 
     .tituloResultado {
-        font-size: 44px;
+        font-size: 24px;
+        padding: 10px;
     }
 
     .textoResultado {
-        font-size: 38px;
+        font-size: 22px;
     }
 
     .final {
         position: absolute;
-        width: 90vw;
+        width: 100vw;
         padding: 0%;
-        height: auto;
+        height: 90vw;
         margin-top: 0px;
     }
 
     .mensaje {
-        
-        width: 24em;
-        height: 13em;
-        margin: 1em;
-        font-size: 25px;
+        width: 90vw;
+        height: 50vw;
+        margin-top: 10px;
+        font-size: 22px;
+        margin: unset;
+        margin-top: 10px;
+        background: #FFFFFF;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 32px;
     }
 
     .copiar {
         position: absolute;
-        width: 650px;
+        width: 90vw;
+        margin-top: 40px;
     }
 
     .desarrollado {
